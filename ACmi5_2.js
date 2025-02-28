@@ -6,7 +6,7 @@ home();
 sleep(1000);
 launchApp('WireGuard');
 className("android.widget.TextView").text("WireGuard").waitFor()
-sleep(500);
+sleep(1500);
 
 home();
 sleep(1000); 
@@ -48,7 +48,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["10","100","3000","2500","2000","1500","1000","500"];
+let ms = ["1400","1100","1600","1900","2000","1500","1000","1200"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
