@@ -12,7 +12,6 @@ home();
 sleep(1000); 
 launchApp('SmartPLAY');
 className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
-let ms = ["1400","1100","1600","2100","2000","1500","1000","1200"];
 sleep(2000);
 setClip(c[0]);
 sleep(1000);
