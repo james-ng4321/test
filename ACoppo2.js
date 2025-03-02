@@ -28,31 +28,59 @@ sleep(1000);
 click(346,506);
 sleep(1000);
 
-home();
-sleep(1000);
-click('Auto Clicker');
-sleep(2000);
-id("enable_multi_mode_button").findOne().click();
-sleep(1000);
-click(297,781);
-sleep(1000);
-
-home();
-sleep(1000); 
-click('SmartPLAY');
-
-sleep(3000); 
 let now = new Date();
 let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["1400","1100","1600","1900","2000","1500","1000","1200"];
+let ms = ["500","100","50","150","1100","1500","1000","1200"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
-    click(42,498);
-        setTimeout(function() {
-        click(42,498);
-        }, 40000);
+book1();
 }, msUntilNextHour2);
+
+function book1(){
+const myInterval = setInterval(function() {
+    //  if(!(className("android.widget.Button").desc("智方便登入").exists()) || !(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){
+      //    className("android.widget.Button").findOne().click();
+        //  }else
+        if(className("android.view.View").desc("我的收件箱").exists()){
+          click(45,90);
+          } else if(!(className("android.widget.Button").desc("智方便登入").exists()) && !(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())) {
+          className("android.widget.Button").findOne().click();
+      } else if(className("android.widget.Button").desc("智方便登入").exists() && !(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){
+      click(365,731);
+      } else if((className("android.widget.Button").desc("虛擬等候室").exists()) || (className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){ 
+          clearInterval(myInterval);
+      }
+  }, 40);
+  setTimeout(() => { clearInterval(myInterval); }, 30000);
+
+  const myInterval2 = setInterval(function() {
+    if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
+        book2();
+    clearInterval(myInterval2);
+    }
+    }, 500);
+}
+  
+  function book2(){
+   if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
+          click(243,1339);
+            sleep(1100);
+            click(624,1184);
+            sleep(900);
+            if(!(className("android.view.View").desc("檢視並付款").exists())){
+            click(355,828);
+            sleep(500);
+            swipe(666,1023,43,1023,500);
+            click(438,1190);
+            sleep(900);
+            if(!(className("android.view.View").desc("檢視並付款").exists())){
+            click(355,828);
+            sleep(500);
+            click(630,1190);
+          }}
+        }
+  }
