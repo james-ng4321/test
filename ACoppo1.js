@@ -68,7 +68,7 @@ const myInterval = setInterval(function() {
   function book2(){
    if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
           click(243,1339);
-            sleep(1100);
+            sleep(1600);
             click(624,1184);
             sleep(900);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
