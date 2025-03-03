@@ -72,12 +72,18 @@ const myInterval = setInterval(function() {
             click(624,1184);
             sleep(900);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
+              click(355,828);
+              sleep(100);
+              if (!(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){sleep(1100);};
             click(355,828);
             sleep(500);
             swipe(666,1023,43,1023,500);
             click(438,1190);
             sleep(900);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
+              click(355,828);
+              sleep(100);
+              if (!(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){sleep(1100);};
             click(355,828);
             sleep(500);
             click(630,1190);
