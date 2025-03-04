@@ -33,7 +33,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["500","100","50","150","1100","1500","1000","1200"];
+let ms = ["500","100","50","1500","1000","500","100","200"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
@@ -42,9 +42,6 @@ book1();
 
 function book1(){
 const myInterval = setInterval(function() {
-    //  if(!(className("android.widget.Button").desc("智方便登入").exists()) || !(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){
-      //    className("android.widget.Button").findOne().click();
-        //  }else
         if(className("android.view.View").desc("我的收件箱").exists()){
           click(45,90);
           } else if(!(className("android.widget.Button").desc("智方便登入").exists()) && !(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())) {
@@ -68,7 +65,7 @@ const myInterval = setInterval(function() {
   function book2(){
    if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
           click(243,1339);
-            sleep(1600);
+            sleep(2100);
             click(624,1184);
             sleep(900);
             if(!(className("android.view.View").desc("檢視並付款").exists())){

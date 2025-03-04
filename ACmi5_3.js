@@ -6,7 +6,7 @@ home();
 sleep(1000);
 launchApp('WireGuard');
 className("android.widget.TextView").text("WireGuard").waitFor()
-sleep(1500);
+sleep(3500);
 
 home();
 sleep(1000); 
@@ -34,7 +34,7 @@ sleep(1000);
 launchApp('Auto Clicker');
 className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
 id("enable_multi_mode_button").findOne().click();
-sleep(1000);
+sleep(2000);
 click(518,1077);
 sleep(1000);
 
@@ -48,12 +48,12 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["500","100","50","150","1100","1500","1000","1200"];
+let ms = ["14000","11000","16000","13000","12000","15000","9000","10000"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
     click(63,627);
     setTimeout(function() {
         click(63,627);
-        }, 40000);
+        }, 60000);
 }, msUntilNextHour2);
