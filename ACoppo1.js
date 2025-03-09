@@ -52,7 +52,7 @@ const myInterval = setInterval(function() {
           clearInterval(myInterval);
       }
   }, 40);
-  setTimeout(() => { clearInterval(myInterval); }, 30000);
+  setTimeout(() => { clearInterval(myInterval); }, 40000);
 
   const myInterval2 = setInterval(function() {
     if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
