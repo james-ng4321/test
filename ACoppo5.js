@@ -5,14 +5,14 @@ var c=b.split(',');
 home();
 sleep(1000);
 click('WireGuard');
-sleep(1000);
+sleep(4000);
 
 home();
 sleep(1000); 
 click('SmartPLAY');
-sleep(2000);
+sleep(4000);
 className("android.widget.Button").desc("登入").findOne().click();
-sleep(2000);
+sleep(4000);
 setClip(c[0]);
 sleep(1000);
 click(325,405);

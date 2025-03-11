@@ -1,18 +1,18 @@
-var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/oppo1');
+var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/oppo2');
 var b=a.body.string();
 var c=b.split(',');
 
 home();
 sleep(1000);
 click('WireGuard');
-sleep(1000);
+sleep(4000);
 
 home();
 sleep(1000); 
 click('SmartPLAY');
-sleep(2000);
+sleep(4000);
 className("android.widget.Button").desc("登入").findOne().click();
-sleep(2000);
+sleep(4000);
 setClip(c[0]);
 sleep(1000);
 click(325,405);
@@ -38,7 +38,7 @@ let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
 book1();
-}, msUntilNextHour);
+}, msUntilNextHour2);
 
 function book1(){
 const myInterval = setInterval(function() {
