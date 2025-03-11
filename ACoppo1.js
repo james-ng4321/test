@@ -59,7 +59,7 @@ const myInterval = setInterval(function() {
         book2();
     clearInterval(myInterval2);
     }
-    }, 500);
+    }, 900);
 }
   
   function book2(){
