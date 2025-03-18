@@ -6,15 +6,15 @@ home();
 sleep(1000);
 launchApp('WireGuard');
 className("android.widget.TextView").text("WireGuard").waitFor()
-sleep(4000);
+sleep(6000);
 
 home();
 sleep(1000); 
 launchApp('SmartPLAY');
-sleep(4000);
+sleep(6000);
 className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
 className("android.widget.Button").desc("登入").findOne().click();
-sleep(4000);
+sleep(6000);
 setClip(c[0]);
 sleep(1000);
 click(502,618);

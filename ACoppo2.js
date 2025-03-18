@@ -5,14 +5,14 @@ var c=b.split(',');
 home();
 sleep(1000);
 click('WireGuard');
-sleep(4000);
+sleep(6000);
 
 home();
 sleep(1000); 
 click('SmartPLAY');
-sleep(4000);
+sleep(6000);
 className("android.widget.Button").desc("登入").findOne().click();
-sleep(4000);
+sleep(6000);
 setClip(c[0]);
 sleep(1000);
 click(325,405);
@@ -27,6 +27,19 @@ click(86,911);
 sleep(1000);
 click(346,506);
 sleep(1000);
+
+home();
+sleep(1000);
+click('Auto Clicker');
+sleep(4000);
+id("enable_multi_mode_button").findOne().click();
+sleep(4000);
+click(297,781);
+sleep(1000);
+
+home();
+sleep(1000); 
+click('SmartPLAY');
 
 let now = new Date();
 let hour = now.getHours();
