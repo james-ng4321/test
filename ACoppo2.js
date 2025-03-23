@@ -48,7 +48,7 @@ let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
 let ms = ["14000","14500","13500","15000","15500","13000","12500","12000"];
 let ms1=Math.floor(Math.random() * 8);
-let msUntilNextHour2= msUntilNextHour - 500;
+let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
 book1();
 }, msUntilNextHour2);
@@ -64,8 +64,8 @@ const myInterval = setInterval(function() {
       } else if((className("android.widget.Button").desc("虛擬等候室").exists()) || (className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){ 
           clearInterval(myInterval);
       }
-  }, 40);
-  setTimeout(() => { clearInterval(myInterval); }, 40000);
+  }, 20);
+  setTimeout(() => { clearInterval(myInterval); }, 50000);
 
   const myInterval2 = setInterval(function() {
     if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
