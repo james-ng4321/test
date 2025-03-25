@@ -50,8 +50,15 @@ let ms = ["14000","14500","13500","15000","15500","13000","12500","12000"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
-book1();
+  book();
 }, msUntilNextHour2);
+
+function book(){
+  click(42,498);
+  setTimeout(function() {
+  click(42,498);
+  }, 50000);
+};
 
 function book1(){
 const myInterval = setInterval(function() {
