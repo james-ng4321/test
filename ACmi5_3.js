@@ -5,14 +5,14 @@ var c=b.split(',');
 home();
 sleep(1000);
 launchApp('WireGuard');
-className("android.widget.TextView").text("WireGuard").waitFor()
+//className("android.widget.TextView").text("WireGuard").waitFor()
 sleep(6000);
 
 home();
 sleep(1000); 
 launchApp('SmartPLAY');
 sleep(6000);
-className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
+//className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
 className("android.widget.Button").desc("登入").findOne().click();
 sleep(6000);
 setClip(c[0]);
@@ -34,7 +34,7 @@ home();
 sleep(1000);
 launchApp('Auto Clicker');
 sleep(4000);
-className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
+//className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
 id("enable_multi_mode_button").findOne().click();
 sleep(2000);
 click(518,1077);
