@@ -5,6 +5,7 @@ var c=b.split(',');
 home();
 sleep(1000);
 click('WireGuard');
+
 sleep(6000);
 
 home();
@@ -57,7 +58,7 @@ function book(){
   click(42,498);
   setTimeout(function() {
   click(42,498);
-  }, 50000);
+  }, 30000);
 };
 
 function book1(){
