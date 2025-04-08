@@ -55,9 +55,21 @@ book();
 
 function book(){
   click(42,498);
+  book3();
   setTimeout(function() {
-  click(42,498);
+  //click(42,498);
   }, 30000);
+};
+
+function book3(){
+
+      const myInterval4 = setInterval(function() {
+        if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
+          clearInterval(myInterval4);
+            book2();
+        }
+        }, 900);
+
 };
 
 function book1(){
@@ -83,27 +95,27 @@ const myInterval = setInterval(function() {
 };
   
   function book2(){
-   if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
-          click(243,1339);
-            sleep(2100);
-            click(624,1184);
-            sleep(900);
+    if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
+      click(243,1339);
+        sleep(2100);
+        click(624,1184);
+        sleep(900);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(355,828);
-              sleep(100);
+              sleep(200);
               if (!(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){sleep(1100);};
             click(355,828);
-            sleep(500);
+            sleep(200);
             swipe(666,1023,43,1023,500);
             click(438,1190);
             sleep(900);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(355,828);
-              sleep(100);
+              sleep(200);
               if (!(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){sleep(1100);};
             click(355,828);
-            sleep(500);
+            sleep(200);
             click(630,1190);
           }}
-        }
-  } 
+    }
+  }

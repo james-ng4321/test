@@ -91,7 +91,7 @@ if((className("android.widget.Button").desc("虛擬等候室").exists()) ){
 
     const myInterval4 = setInterval(function() {
 if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
-               book2();
+             //   book2();
                 clearInterval(myInterval4);
               };
           }, 50);

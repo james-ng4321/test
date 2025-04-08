@@ -1,10 +1,11 @@
-var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/oppo2');
+var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/oppo3');
 var b=a.body.string();
 var c=b.split(',');
 
 home();
 sleep(1000);
 click('WireGuard');
+
 sleep(6000);
 
 home();
@@ -50,13 +51,14 @@ let ms = ["14000","14500","13500","15000","15500","13000","12500","12000"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
-  book();
-  book3();
+book();
 }, msUntilNextHour2);
 
 function book(){
   click(42,498);
-
+  setTimeout(function() {
+  click(42,498);
+  }, 30000);
 };
 
 function book1(){
@@ -78,25 +80,9 @@ const myInterval = setInterval(function() {
         book2();
     clearInterval(myInterval2);
     }
-  }, 900);
-}
+    }, 900);
+};
   
-function book3(){
-  const myInterval3 = setInterval(function() {
-if((className("android.widget.Button").desc("虛擬等候室").exists()) ){ 
-  click(42,498);
-  clearInterval(myInterval3);
-        } 
-    }, 50);
-
-    const myInterval4 = setInterval(function() {
-if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
-               book2();
-                clearInterval(myInterval4);
-              };
-          }, 50);
-  }
-
   function book2(){
    if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
           click(243,1339);
@@ -121,4 +107,4 @@ if(className("android.widget.Button").desc("超过99條通知 我的收件箱").
             click(630,1190);
           }}
         }
-  }
+  } 

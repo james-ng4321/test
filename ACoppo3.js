@@ -54,11 +54,24 @@ setTimeout(function() {
 book();
 }, msUntilNextHour2);
 
+
 function book(){
   click(42,498);
+  book3();
   setTimeout(function() {
-  click(42,498);
+  //click(42,498);
   }, 30000);
+};
+
+function book3(){
+
+      const myInterval4 = setInterval(function() {
+        if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
+          clearInterval(myInterval4);
+            book2();
+        }
+        }, 900);
+
 };
 
 function book1(){
