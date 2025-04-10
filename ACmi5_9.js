@@ -20,7 +20,7 @@ sleep(1000);
 click(502,618);
 sleep(1000);
 click(125,1196);
-sleep(1000);
+sleep(2000);
 setClip(c[1]);
 sleep(1000); 
 click(504,934);
