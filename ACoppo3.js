@@ -64,15 +64,20 @@ function book(){
 };
 
 function book3(){
+  const myInterval3 = setInterval(function() {
+if((className("android.widget.Button").desc("虛擬等候室").exists()) ){ 
+  click(42,498);
+  clearInterval(myInterval3);
+        } 
+    }, 50);
 
-      const myInterval4 = setInterval(function() {
-        if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
-          clearInterval(myInterval4);
-            book2();
-        }
-        }, 900);
-
-};
+    const myInterval4 = setInterval(function() {
+if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
+               book2();
+                clearInterval(myInterval4);
+              };
+          }, 50);
+  }
 
 function book1(){
 const myInterval = setInterval(function() {
