@@ -55,7 +55,7 @@ book();
 
 function book(){
   click(42,498);
-  book3();
+  book2();
   setTimeout(function() {
   //click(42,498);
   }, 30000);
@@ -100,27 +100,31 @@ const myInterval = setInterval(function() {
 };
   
   function book2(){
-    if(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists()){
+    className("android.widget.Button").desc("虛擬等候室").findOne();
+    click(42,498);
+    className("android.view.View").desc("你的日程表").findOne();
       click(243,1339);
-        sleep(2100);
+        className("android.view.View").desc("最遠可預約的日期").findOne();
         click(624,1184);
-        sleep(900);
+        sleep(1100);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(355,828);
-              sleep(200);
-              if (!(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){sleep(1100);};
-            click(355,828);
-            sleep(200);
+              sleep(100);
+              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+                sleep(1500);
+                click(355,828);
+                sleep(100);};
             swipe(666,1023,43,1023,500);
+            sleep(100);
             click(438,1190);
-            sleep(900);
+            sleep(1100);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(355,828);
-              sleep(200);
-              if (!(className("android.widget.Button").desc("超过99條通知 我的收件箱").exists())){sleep(1100);};
-            click(355,828);
-            sleep(200);
+              sleep(100);
+              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+              sleep(1500);
+              click(355,828);
+              sleep(100);};
             click(630,1190);
           }}
-    }
   }
