@@ -51,12 +51,11 @@ let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
   book();
-  book2();
 }, msUntilNextHour2);
 
 function book(){
   click(42,498);
-
+  book2();
 };
 
 function book1(){
@@ -98,11 +97,20 @@ if(className("android.widget.Button").desc("超过99條通知 我的收件箱").
   }
 
   function book2(){
-    sleep(1000);
-    className("android.widget.Button").desc("虛擬等候室").findOne();
-    sleep(1000);
-    click(42,498);
+    var autoclick =0;
+    setTimeout(function() {
+      if(autoclick ==0){
+        click(42,498);
+        autoclick =1;};
+      }, 40000);
+   // sleep(1000);
+   // className("android.widget.Button").desc("虛擬等候室").findOne();
+   // sleep(1000);
+   // click(42,498);
     className("android.view.View").desc("你的日程表").findOne();
+    if(autoclick ==0){
+      click(42,498);
+      autoclick =1;};
     sleep(1000);
       click(243,1339);
         className("android.view.View").desc("最遠可預約的日期").findOne();
