@@ -58,7 +58,6 @@ setTimeout(function() {
     book2();
 }, msUntilNextHour2);
 
-
 function book2(){
   var autoclick =0;
  setTimeout(function() {
@@ -71,9 +70,6 @@ function book2(){
 // sleep(1000);
 //  click(63,627);
    className("android.view.View").desc("你的日程表").findOne();
-   if(autoclick ==0){
-     click(63,627);
-     autoclick =1;};
    sleep(1000);
    click(372,1807);
    className("android.view.View").desc("最遠可預約的日期").findOne();
