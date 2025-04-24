@@ -57,6 +57,7 @@ book();
 
 function book(){
   click(42,498);
+  sleep(35000);
   book2();
   setTimeout(function() {
   //click(42,498);
@@ -103,12 +104,10 @@ const myInterval = setInterval(function() {
   
 function book2(){
   var autoclick =0;
-  setTimeout(function() {
     if(autoclick ==0){
       click(42,498);
       autoclick =1;};
-    }, 40000);
- // sleep(1000);
+  sleep(1000);
  // className("android.widget.Button").desc("虛擬等候室").findOne();
  // sleep(1000);
  // click(42,498);

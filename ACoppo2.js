@@ -55,6 +55,7 @@ setTimeout(function() {
 
 function book(){
   click(42,498);
+  sleep(35000);
   book2();
 };
 
@@ -98,12 +99,10 @@ if(className("android.widget.Button").desc("超过99條通知 我的收件箱").
 
   function book2(){
     var autoclick =0;
-    setTimeout(function() {
       if(autoclick ==0){
         click(42,498);
         autoclick =1;};
-      }, 40000);
-   // sleep(1000);
+    sleep(1000);
    // className("android.widget.Button").desc("虛擬等候室").findOne();
    // sleep(1000);
    // click(42,498);
