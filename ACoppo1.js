@@ -113,22 +113,22 @@ const myInterval = setInterval(function() {
         sleep(1100);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(475,828);// click(355,828);
-              sleep(100);
+              sleep(200);
               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                 sleep(1500);
                 click(475,828);// click(355,828);
-                sleep(100);};
-            swipe(666,1023,43,1023,500);
-            sleep(100);
+                sleep(200);};
+            swipe(666,1023,43,1023,800);
+            sleep(200);
             click(438,1190);
             sleep(1100);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(475,828);// click(355,828);
-              sleep(100);
+              sleep(200);
               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
               sleep(1500);
               click(475,828);// click(355,828);
-              sleep(100);};
+              sleep(200);};
             click(630,1190);
           }}
   }
