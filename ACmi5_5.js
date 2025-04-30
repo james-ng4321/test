@@ -74,7 +74,7 @@ function book2(){
      className("android.view.View").desc("最遠可預約的日期").findOne();
      sleep(2000);
          swipe(778,1685,778,1276,800);
-         sleep(600);
+         sleep(100);
          click(778,1452);
          sleep(1100);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
