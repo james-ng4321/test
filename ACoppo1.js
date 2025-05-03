@@ -108,7 +108,7 @@ const myInterval = setInterval(function() {
     sleep(1000);
       click(243,1339);
         className("android.view.View").desc("最遠可預約的日期").findOne();
-        sleep(1300);
+        sleep(1000);
         click(624,1184);
         sleep(1100);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
