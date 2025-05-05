@@ -72,7 +72,7 @@ function book2(){
      sleep(1000);
      click(372,1807);
      className("android.view.View").desc("最遠可預約的日期").findOne();
-     sleep(1000);
+     sleep(1500);
          swipe(778,1685,778,1276,800);
          sleep(500);
          click(778,1452);

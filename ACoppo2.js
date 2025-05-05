@@ -108,7 +108,7 @@ if(className("android.widget.Button").desc("超过99條通知 我的收件箱").
      sleep(1000);
        click(243,1339);
          className("android.view.View").desc("最遠可預約的日期").findOne();
-         sleep(1000);
+         sleep(1500);
          click(624,1184);
          sleep(1100);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
