@@ -50,7 +50,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["14000","14500","13500","15000","15500","13000","12500","12000"];
+let ms = ["9950","9900","9800","9700","9600","9500","9400","9300"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
@@ -60,6 +60,9 @@ setTimeout(function() {
     book2();
 }, msUntilNextHour2);
 
+setTimeout(function() {
+  click(250,1155);
+}, msUntilNextHour);
 
 function book2(){
   // sleep(1000);
@@ -69,11 +72,11 @@ function book2(){
     click(63,627);
     sleep(1000);
      className("android.view.View").desc("你的日程表").findOne();
-     sleep(1200);
+     sleep(1000);
      click(372,1807);
      className("android.view.View").desc("最遠可預約的日期").findOne();
      sleep(1500);
-         swipe(778,1685,778,1276,800);
+         swipe(778,1685,778,1276,1000);
          sleep(500);
          click(778,1452);
          sleep(1100);
@@ -84,7 +87,7 @@ function book2(){
                sleep(1500);
                click(702,1163); //  click(530,1165);
                sleep(200);};
-           swipe(885,1365,52,1385,800);
+           swipe(885,1365,52,1385,1000);
            sleep(500);
            click(715,1458);
            sleep(1100);
