@@ -46,7 +46,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["14000","14500","13500","15000","15500","13000","12500","12000"];
+let ms = ["11000","11500","11300","11400","11600","11700","11800","11100"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
@@ -118,7 +118,7 @@ const myInterval = setInterval(function() {
                 sleep(1500);
                 click(475,828);// click(355,828);
                 sleep(200);};
-            swipe(666,1023,43,1023,800);
+            swipe(666,1023,43,1023,1000);
             sleep(200);
             click(438,1190);
             sleep(1100);
