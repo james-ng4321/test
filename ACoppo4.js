@@ -46,7 +46,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["1950","1900","1800","1700","2600","2500","2400","2300"];
+let ms = ["3950","3900","3800","3700","4600","4500","4400","4300"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
@@ -55,7 +55,7 @@ setTimeout(function() {
 
 function book(){
   click(42,498);
-  sleep(40000);
+  sleep(45000);
   book2();
   setTimeout(function() {
   //click(42,498);
@@ -100,38 +100,38 @@ const myInterval = setInterval(function() {
   }, 900);
 }
   
-function book2(){
-  // sleep(1000);
-  // className("android.widget.Button").desc("虛擬等候室").findOne();
-  // sleep(1000);
-  // click(42,498);
-  click(42,498);
-  sleep(1000);
-   className("android.view.View").desc("你的日程表").findOne();
+  function book2(){
+   // sleep(1000);
+   // className("android.widget.Button").desc("虛擬等候室").findOne();
+   // sleep(1000);
+   // click(42,498);
+   click(42,498);
    sleep(1000);
-     click(243,1339);
-       className("android.view.View").desc("最遠可預約的日期").findOne();
-       sleep(1500);
-       click(624,1184);
-       sleep(1100);
-           if(!(className("android.view.View").desc("檢視並付款").exists())){
-             click(475,828);// click(355,828);
-             sleep(200);
-             if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
-               sleep(1500);
-               click(475,828);// click(355,828);
-               sleep(200);};
-           swipe(666,1023,43,1023,1000);
-           sleep(200);
-           click(438,1190);
-           sleep(1100);
-           if(!(className("android.view.View").desc("檢視並付款").exists())){
-             click(475,828);// click(355,828);
-             sleep(200);
-             if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
-             sleep(1500);
-             click(475,828);// click(355,828);
-             sleep(200);};
-           click(630,1190);
-         }}
- }
+    className("android.view.View").desc("你的日程表").findOne();
+    sleep(1000);
+      click(243,1339);
+        className("android.view.View").desc("最遠可預約的日期").findOne();
+        sleep(1500);
+        click(476,1190);
+        sleep(1500);
+            if(!(className("android.view.View").desc("檢視並付款").exists())){
+              click(475,828);// click(355,828);
+              sleep(200);
+              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+                sleep(1100);
+                click(475,828);// click(355,828);
+                sleep(200);};
+            swipe(666,1023,43,1023,1000);
+            sleep(200);
+            click(438,1190);
+            sleep(1500);
+            if(!(className("android.view.View").desc("檢視並付款").exists())){
+              click(475,828);// click(355,828);
+              sleep(200);
+              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+              sleep(1100);
+              click(475,828);// click(355,828);
+              sleep(200);};
+            click(530,1190);
+          }}
+  }

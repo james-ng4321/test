@@ -55,7 +55,7 @@ book();
 
 function book(){
   click(42,498);
-  sleep(50000);
+  sleep(45000);
   book2();
 };
 
@@ -109,26 +109,26 @@ const myInterval = setInterval(function() {
       click(243,1339);
         className("android.view.View").desc("最遠可預約的日期").findOne();
         sleep(1500);
-        click(624,1184);
-        sleep(1100);
+        click(476,1190);
+        sleep(1500);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(475,828);// click(355,828);
               sleep(200);
               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
-                sleep(1500);
+                sleep(1100);
                 click(475,828);// click(355,828);
                 sleep(200);};
             swipe(666,1023,43,1023,1000);
             sleep(200);
             click(438,1190);
-            sleep(1100);
+            sleep(1500);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(475,828);// click(355,828);
               sleep(200);
               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
-              sleep(1500);
+              sleep(1100);
               click(475,828);// click(355,828);
               sleep(200);};
-            click(630,1190);
+            click(530,1190);
           }}
   }
