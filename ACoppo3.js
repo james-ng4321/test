@@ -49,7 +49,7 @@ let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
 let ms = ["3700","3800","3900","3950","3750","3850","3900","3950"];
 let ms1=Math.floor(Math.random() * 8);
-let msUntilNextHour2= msUntilNextHour - ms[ms1];
+let msUntilNextHour2= msUntilNextHour - 10; //ms[ms1];
 setTimeout(function() {
 book();
 }, msUntilNextHour2);
