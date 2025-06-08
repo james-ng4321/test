@@ -50,7 +50,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["4700","4800","4850","4900","4950","4650","4600","4550"];
+let ms = ["4100","4200","4300","4400","4150","4250","4350","4450"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
