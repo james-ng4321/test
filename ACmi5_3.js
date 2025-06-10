@@ -56,7 +56,7 @@ let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
     click(63,627);
-    sleep(50000);
+    sleep(60000);
     book2();
 }, msUntilNextHour2);
 
@@ -77,7 +77,7 @@ function book2(){
      click(372,1807);
      className("android.view.View").desc("最遠可預約的日期").findOne();
      sleep(1500);
-         swipe(778,1685,778,1276,1000);
+         swipe(778,1685,778,1010,1000);//1276,1000);
          sleep(500);
          click(778,1452);
          sleep(1100);
