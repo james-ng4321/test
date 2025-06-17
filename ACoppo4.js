@@ -46,7 +46,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["2700","2800","2900","2950","2750","2850","2900","2950"];
+let ms = ["4100","4200","4300","4400","4150","4250","4350","4450"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
@@ -55,7 +55,7 @@ setTimeout(function() {
 
 function book(){
   click(42,498);
-    sleep(60000);
+    sleep(70000);
   book2();
   setTimeout(function() {
   //click(42,498);
