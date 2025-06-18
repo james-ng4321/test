@@ -1,4 +1,4 @@
-var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/oppo4');
+var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/oppo1');
 var b=a.body.string();
 var c=b.split(',');
 
@@ -50,16 +50,13 @@ let ms = ["5100","5200","5300","5400","5150","5250","5350","5450"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
-  book();
+book();
 }, msUntilNextHour2);
 
 function book(){
   click(42,498);
     sleep(70000);
   book2();
-  setTimeout(function() {
-  //click(42,498);
-  }, 30000);
 };
 
 function book3(){
@@ -77,7 +74,7 @@ if(className("android.widget.Button").desc("超过99條通知 我的收件箱").
               };
           }, 50);
   }
-
+  
 function book1(){
 const myInterval = setInterval(function() {
         if(className("android.view.View").desc("我的收件箱").exists()){
@@ -97,18 +94,21 @@ const myInterval = setInterval(function() {
         book2();
     clearInterval(myInterval2);
     }
-  }, 900);
-}
+    }, 900);
+};
   
   function book2(){
    // sleep(1000);
    // className("android.widget.Button").desc("虛擬等候室").findOne();
    // sleep(1000);
    // click(42,498);
+   click(42,498);
+   sleep(1000);
+    className("android.view.View").desc("你的日程表").findOne();
+    sleep(1000);
+      click(243,1339);
         className("android.view.View").desc("最遠可預約的日期").findOne();
-        sleep(1000);
-                 swipe(500,1222,500,966,1000);
-                         sleep(500);
+        sleep(1500);
         click(476,1190);
         sleep(1500);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
@@ -118,7 +118,7 @@ const myInterval = setInterval(function() {
                 sleep(1100);
                 click(475,828);// click(355,828);
                 sleep(200);};
-          swipe(650,1023,43,1035,1000);
+            swipe(666,1023,43,1023,1000);
             sleep(200);
             click(438,1190);
             sleep(1500);
