@@ -46,16 +46,16 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["5100","5200","5300","5400","5150","5250","5350","5450"];
+let ms = ["4100","4200","4300","4400","4150","4250","4350","4450"];
 let ms1=Math.floor(Math.random() * 8);
-let msUntilNextHour2= msUntilNextHour - 10;// ms[ms1];
+let msUntilNextHour2= msUntilNextHour - ms[ms1];
 setTimeout(function() {
   book();
 }, msUntilNextHour2);
 
 function book(){
   click(42,498);
-    sleep(70000);
+    sleep(60000);
   book2();
 };
 
@@ -105,7 +105,7 @@ if(className("android.widget.Button").desc("超过99條通知 我的收件箱").
       click(42,498);
    sleep(1000);
         className("android.view.View").desc("最遠可預約的日期").findOne();
-        sleep(1000);
+        sleep(1500);
                  swipe(500,1222,500,966,1000);
                          sleep(500);
         click(476,1190);

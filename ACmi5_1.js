@@ -55,9 +55,10 @@ let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
     click(63,627);
-    sleep(70000);
+    sleep(60000);
     book2();
 }, msUntilNextHour2);
+
 
 setTimeout(function() {
   click(250,1155);
@@ -74,7 +75,7 @@ function book2(){
      sleep(1000);
      click(372,1807);
      className("android.view.View").desc("已取消的段節再開放予租訂").findOne();
-     sleep(1100);
+     sleep(1500);
      //className("android.view.View").desc("最遠可預約的日期").findOne();
      //sleep(1500);
          swipe(778,1685,778,1010,1000);//1276,1000);
@@ -99,6 +100,6 @@ function book2(){
                sleep(1500);
                click(702,1163); //  click(530,1165);
                sleep(200);};
-           click(900,1458);
+            click(900,1458);//          click(967,1458);
          }}
   }

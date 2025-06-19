@@ -49,13 +49,13 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["1100","1200","1300","1400","1150","1250","1350","1450"];
+let ms = ["4100","4200","4300","4400","4150","4250","4350","4450"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
     click(63,627);
-    sleep(70000);
+    sleep(60000);
     book2();
 }, msUntilNextHour2);
 
@@ -75,7 +75,7 @@ function book2(){
      sleep(1000);
      click(372,1807);
      className("android.view.View").desc("已取消的段節再開放予租訂").findOne();
-     sleep(1100);
+     sleep(1500);
      //className("android.view.View").desc("最遠可預約的日期").findOne();
      //sleep(1500);
          swipe(778,1685,778,1010,1000);//1276,1000);
