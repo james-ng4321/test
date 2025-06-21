@@ -56,7 +56,8 @@ setTimeout(function() {
 function book(){
   click(42,498);
     sleep(60000);
-  book2();
+       click(42,498);
+ // book2();
 };
 
 function book3(){
@@ -96,18 +97,18 @@ const myInterval = setInterval(function() {
     }
     }, 900);
 };
-  
+
   function book2(){
    // sleep(1000);
    // className("android.widget.Button").desc("虛擬等候室").findOne();
    // sleep(1000);
    // click(42,498);
-      click(42,498);
    sleep(1000);
+    className("android.view.View").desc("你的日程表").findOne();
+    sleep(1000);
+      click(243,1339);
         className("android.view.View").desc("最遠可預約的日期").findOne();
         sleep(1500);
-                 swipe(500,1222,500,966,1000);
-                         sleep(500);
         click(476,1190);
         sleep(1500);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
@@ -117,7 +118,7 @@ const myInterval = setInterval(function() {
                 sleep(1100);
                 click(475,828);// click(355,828);
                 sleep(200);};
-          swipe(650,1023,43,1035,1000);
+            swipe(666,1023,43,1023,1000);
             sleep(200);
             click(438,1190);
             sleep(1500);
