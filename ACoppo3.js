@@ -57,7 +57,7 @@ function book(){
   click(42,498);
     sleep(59000);
        click(42,498);
- // book2();
+  book2();
 };
 
 function book3(){
