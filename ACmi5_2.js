@@ -49,7 +49,7 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["3100","3200","3300","3400","2150","2250","2350","2450"];
+let ms = ["3700","3800","3900","3950","3750","3850","3900","3950"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
@@ -79,7 +79,7 @@ function book2(){
          swipe(778,1685,778,1276,1000);
          sleep(500);
          click(778,1452);
-         sleep(1100);
+         sleep(1500);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
              sleep(200);
