@@ -49,9 +49,9 @@ let hour = now.getHours();
 let min = now.getMinutes();
 let sec = now.getSeconds();
 let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
-let ms = ["3700","3800","3900","3950","3750","3850","3900","3950"];
+let ms = ["3100","3200","3300","3400","3100","3200","3300","3400"];
 let ms1=Math.floor(Math.random() * 8);
-let msUntilNextHour2= msUntilNextHour // - ms[ms1];
+let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
     click(63,627);
