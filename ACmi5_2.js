@@ -59,7 +59,7 @@ setTimeout(function() {
     click(63,627);
     sleep(55000);
     click(63,627);
-  //  book2();
+    book2();
 }, msUntilNextHour2);
 
 
@@ -72,7 +72,7 @@ function book2(){
   // className("android.widget.Button").desc("虛擬等候室").findOne();
   // sleep(1000);
   //  click(63,627);
-    sleep(1000);
+     sleep(1800);
      className("android.view.View").desc("你的日程表").findOne();
      sleep(1000);
      click(372,1807);
