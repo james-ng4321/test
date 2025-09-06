@@ -56,9 +56,9 @@ setTimeout(function() {
 
 function book(){
   click(42,498);
-    sleep(35000);
+    sleep(65000);
        click(42,498);
- // book2();
+  book2();
 };
 
 function book3(){
@@ -109,7 +109,7 @@ const myInterval = setInterval(function() {
     sleep(1000);
       click(243,1339);
         className("android.view.View").desc("最遠可預約的日期").findOne();
-        sleep(1500);
+        sleep(1800);
         click(476,1190);
         sleep(1500);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
