@@ -60,7 +60,7 @@ setTimeout(function() {
     click(63,627);
     sleep(65000);
     click(63,627);
-    book2();
+//    book2();
 }, msUntilNextHour2);
 
 
