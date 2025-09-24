@@ -12,7 +12,7 @@ sleep(1000);
 click('SmartPLAY');
 sleep(6000);
 className("android.widget.Button").desc("登入").findOne();
-sleep(1000);
+sleep(10000);
 className("android.widget.Button").desc("登入").findOne().click();
 sleep(6000);
 setClip(c[0]);
