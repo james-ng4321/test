@@ -12,7 +12,7 @@ sleep(1000);
 click('SmartPLAY');
 sleep(6000);
 className("android.widget.Button").desc("登入").findOne().click();
-sleep(6000);
+sleep(8000);
 setClip(c[0]);
 sleep(1000);
 click(325,405);
@@ -35,10 +35,10 @@ sleep(4000);
 id("enable_multi_mode_button").findOne().click();
 sleep(4000);
 click(297,781);
-sleep(3000);
+sleep(2000);
 
 home();
-sleep(1000); 
+sleep(2000); 
 click('SmartPLAY');
 
 let now = new Date();
