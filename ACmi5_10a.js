@@ -10,7 +10,7 @@ var c=b.split(',');
 home();
 sleep(1000); 
 launchApp('SmartPLAY');
-sleep(6000);
+sleep(8000);
 //className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
 className("android.widget.Button").desc("登入").findOne().click();
 sleep(9000);
