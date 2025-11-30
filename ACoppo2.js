@@ -8,42 +8,38 @@ var c=b.split(',');
 //sleep(6000);
 
 home();
+sleep(1000); 
+click('SmartPLAY');
+sleep(8000);
+className("android.widget.Button").desc("登入").findOne().click();
+sleep(8000);
+setClip(c[0]);
+sleep(1100);
+click(325,405);
+sleep(1100);
+click(86,911);
+sleep(1100);
+setClip(c[1]);
+sleep(1100);
+click(350,609);
+sleep(1100);
+click(86,911);
+sleep(1100);
+click(346,506);
+sleep(1100);
+
+home();
 sleep(1000);
 click('Auto Clicker');
 sleep(4000);
 id("enable_multi_mode_button").findOne().click();
 sleep(4000);
 click(297,781);
-sleep(2000);
-click(86,911);
-sleep(2000);
+sleep(1000);
 
 home();
-sleep(1000); 
+sleep(1100); 
 click('SmartPLAY');
-sleep(6000);
-className("android.widget.Button").desc("登入").findOne().click();
-sleep(8000);
-setClip(c[0]);
-sleep(1000);
-click(325,405);
-sleep(1000);
-click(86,911);
-sleep(1000);
-setClip(c[1]);
-sleep(1000);
-click(350,609);
-sleep(1000);
-click(86,911);
-sleep(1000);
-click(346,506);
-sleep(1000);
-
-
-
-//home();
-//sleep(2000); 
-//click('SmartPLAY');
 
 let now = new Date();
 let hour = now.getHours();
