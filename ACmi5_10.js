@@ -13,7 +13,7 @@ launchApp('SmartPLAY');
 sleep(8000);
 //className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
 className("android.widget.Button").desc("登入").findOne().click();
-sleep(8000);
+sleep(11000);
 setClip(c[0]);
 sleep(1500);
 click(502,618);
