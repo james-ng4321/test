@@ -8,7 +8,7 @@ var c=b.split(',');
 //sleep(6000);
 
 home();
-sleep(1000); 
+sleep(1100); 
 launchApp('SmartPLAY');
 sleep(8000);
 //className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
@@ -17,17 +17,17 @@ sleep(8000);
 setClip(c[0]);
 sleep(1500);
 click(502,618);
-sleep(1000);
+sleep(1100);
 click(125,1196);
-sleep(1000);
+sleep(1100);
 setClip(c[1]);
-sleep(1000); 
+sleep(1100); 
 click(504,934);
-sleep(1000);
+sleep(1100);
 click(125,1196);
-sleep(1000);
+sleep(1100);
 click(497,770);
-sleep(1000);
+sleep(1100);
 
 home();
 sleep(1000);
@@ -40,7 +40,7 @@ click(518,1077);
 sleep(1000);
 
 home();
-sleep(1000); 
+sleep(2000); 
 launchApp('SmartPLAY');
 
 sleep(3000); 
