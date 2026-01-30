@@ -38,6 +38,8 @@ id("enable_multi_mode_button").findOne().click();
 sleep(2000);
 click(518,1077);
 sleep(1000);
+click(76,1287);
+sleep(1000);
 
 home();
 sleep(2000); 
