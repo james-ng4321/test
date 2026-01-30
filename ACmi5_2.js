@@ -59,13 +59,12 @@ let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
 //let ms = ["3910","3920","3930","3910","3910","3920","3930","3910"];
 let ms = ["2510","2520","2530","2510","2510","2500","2530","2510"];
 let ms1=Math.floor(Math.random() * 8);
-//let msUntilNextHour2= msUntilNextHour  - ms[ms1];
-let msUntilNextHour2=30000;
+let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
-  //  click(63,627);
-    sleep(20000);
- //   click(63,627);
+    click(63,627);
+    sleep(15000);
+    click(63,627);
     book2();
 }, msUntilNextHour2);
 
