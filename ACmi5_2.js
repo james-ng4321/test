@@ -63,11 +63,11 @@ let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 //let msUntilNextHour2= 5000;
 
 setTimeout(function() {
- //   click(500,1200);
-    click(63,627);
-    sleep(15000);
-    click(63,627);
-    sleep(200);
+   click(500,1200);
+  //  click(63,627);
+  //  sleep(15000);
+  //  click(63,627);
+ //   sleep(200);
     book2();
 }, msUntilNextHour2);
 
