@@ -7,7 +7,7 @@ var c=b.split(',');
 ///launchApp('WireGuard');
 //sleep(6000);
 home();
-sleep(1000); 
+sleep(1100); 
 launchApp('SmartPLAY');
 sleep(8000);
 //className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
