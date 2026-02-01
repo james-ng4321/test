@@ -62,8 +62,9 @@ let ms = ["2510","2520","2530","2510","2510","2500","2530","2510"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
+
 setTimeout(function() {
-    click(500,1200);
+ //   click(500,1200);
     click(63,627);
     sleep(15000);
     click(63,627);
