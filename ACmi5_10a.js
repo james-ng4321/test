@@ -122,4 +122,4 @@ function book2(){
                sleep(200);};
            click(967,1458);
          }}
-  }}
+  }
