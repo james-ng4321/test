@@ -94,11 +94,11 @@ function book2(){
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
              sleep(200);
-             if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+             if((!(className("android.view.View").desc("注視列表").exists()))||(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);} else {sleep(1100);
-               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+               if((!(className("android.view.View").desc("注視列表").exists()))||(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);};
@@ -110,11 +110,11 @@ function book2(){
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
              sleep(200);
-             if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+             if((!(className("android.view.View").desc("注視列表").exists()))||(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1100);
                click(702,1163); //  click(530,1165);
                sleep(200);} else {sleep(1100);
-               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
+               if((!(className("android.view.View").desc("注視列表").exists()))||(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);};
