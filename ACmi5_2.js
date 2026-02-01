@@ -79,12 +79,12 @@ function book2(){
   // className("android.widget.Button").desc("虛擬等候室").findOne();
   // sleep(1000);
   //  click(63,627);
-     sleep(1800);
+     sleep(1200);
      className("android.view.View").desc("你的日程表").findOne();
      sleep(1000);
      click(372,1807);
      className("android.view.View").desc("最遠可預約的日期").findOne();
-     sleep(1800);
+     sleep(1200);
          swipe(778,1685,778,1276,1000);
          sleep(500);
          click(778,1452);
