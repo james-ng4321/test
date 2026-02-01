@@ -96,7 +96,7 @@ function book2(){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);};
-          if(!(className("android.view.View").desc("注視列表").exists())){sleep 1000;};
+          if(!(className("android.view.View").desc("注視列表").exists())){sleep (1000);};
            swipe(885,1365,52,1385,1000);
            sleep(500);
            click(715,1458);
