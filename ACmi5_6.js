@@ -58,6 +58,7 @@ let ms = ["2010","2020","2030","2010","2010","2020","2030","2010"];
 //let ms = ["3010","3020","3030","3010","3010","3020","3030","3010"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
+
 setTimeout(function() {
  //  click(500,1200);
     click(63,627);
