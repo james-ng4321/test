@@ -92,7 +92,7 @@ function book2(){
          swipe(778,1685,778,1276,1000);
          sleep(500);
          click(778,1452);
-         sleep(1500);
+         sleep(1200);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
              sleep(200);
