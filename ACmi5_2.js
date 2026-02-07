@@ -64,7 +64,7 @@ let msUntilNextHour2= 5000;
 
 setTimeout(function() {
   click(500,1200);
-//    click(63,627);
+ //    click(63,627);
   //  sleep(10000);
   //  click(63,627);
     sleep(200);
