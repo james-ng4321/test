@@ -1,3 +1,32 @@
+
+"auto";
+
+var w = floaty.window(
+    <frame gravity="center">
+        <button id="stop" text="⛔ 停止" w="80" h="40"/>
+    </frame>
+);
+
+w.setPosition(20, 200);
+w.setTouchable(true);
+
+w.stop.click(() => {
+    toast("停止腳本...");
+    // 1) 關閉浮窗
+    w.close();
+    // 2) 直接停止本腳本引擎（最乾淨）
+    engines.myEngine().forceStop();
+});
+
+// 你的主程式
+toast("開始執行...");
+while (true) {
+    // 模擬工作
+    log("running...");
+    sleep(1000);
+}
+
+
 var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/mi5_2');
 var b=a.body.string();
 var c=b.split(',');
