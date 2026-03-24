@@ -30,7 +30,7 @@ click(497,770);
 sleep(1000);
 
 home();
-sleep(1000);
+sleep(2000);
 click('418,1360');
 sleep(4000);
 //className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
