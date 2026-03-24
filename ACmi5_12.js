@@ -8,8 +8,8 @@ var c=b.split(',');
 //sleep(6000);
 
 home();
-sleep(1000); 
-click('SmartPLAY');
+sleep(2000); 
+app.launchApp('SmartPLAY');
 sleep(6000);
 //className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
 className("android.widget.Button").desc("登入").findOne().click();
