@@ -31,7 +31,7 @@ sleep(1000);
 
 home();
 sleep(2000);
-click('418,1360');
+click(415,1360);
 sleep(4000);
 //className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
 id("enable_multi_mode_button").findOne().click();
