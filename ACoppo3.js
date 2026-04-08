@@ -27,6 +27,8 @@ click(86,911);
 sleep(1000);
 click(346,506);
 sleep(1000);
+  click(42,950);
+sleep(1000);
 
 home();
 sleep(1000);
@@ -63,7 +65,7 @@ function book(){
   click(42,498);
     sleep(8000);
        click(42,498);
-//  book2();
+  book2();
 };
 
 function book3(){
