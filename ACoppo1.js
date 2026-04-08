@@ -69,9 +69,9 @@ function book(){
   click(42,498);
         sleep(8000);
     click(42,498);
-//   book2();
+   book2();
 };
-book2();
+
 function book3(){
   const myInterval3 = setInterval(function() {
 if((className("android.widget.Button").desc("虛擬等候室").exists()) ){ 
