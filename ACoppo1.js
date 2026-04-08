@@ -135,7 +135,7 @@ const myInterval = setInterval(function() {
                 sleep(1100);
                 click(475,828);// click(355,828);
                 sleep(200);} }
-            swipe(666,1023,43,1023,1000);
+            swipe(666,1023,43,1023,1500);
             sleep(500);
             click(438,1190);
             sleep(1500);
