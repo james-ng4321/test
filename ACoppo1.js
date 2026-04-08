@@ -38,7 +38,7 @@ id("enable_multi_mode_button").findOne().click();
 sleep(4000);
 click(297,781);
 sleep(1000);
-  click(42,990);
+  click(42,950);
 sleep(1000);
 
 home();
@@ -135,7 +135,7 @@ const myInterval = setInterval(function() {
                 sleep(1100);
                 click(475,828);// click(355,828);
                 sleep(200);} }
-            swipe(666,1023,43,1023,1500);
+            swipe(666,1023,73,1023,1500);
             sleep(500);
             click(438,1190);
             sleep(1500);
