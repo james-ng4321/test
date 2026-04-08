@@ -28,7 +28,7 @@ sleep(1000);
 click(86,911);
 sleep(1000);
 click(346,506);
-sleep(1000);
+ sleep(1000);
 
 home();
 sleep(1000);
