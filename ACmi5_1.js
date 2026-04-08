@@ -105,7 +105,6 @@ function book2(){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);}}  
-                sleep(300);
            swipe(885,1365,52,1385,1100);
            sleep(500);
            click(715,1458);
