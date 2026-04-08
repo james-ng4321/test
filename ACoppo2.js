@@ -27,8 +27,7 @@ click(86,911);
 sleep(1100);
 click(346,506);
 sleep(1100);
-  click(42,950);
-sleep(1000);
+  
 
 home();
 sleep(1200);
@@ -37,6 +36,8 @@ sleep(4000);
 id("enable_multi_mode_button").findOne().click();
 sleep(4000);
 click(297,781);
+sleep(1000);
+  click(42,950);
 sleep(1000);
 
 home();
