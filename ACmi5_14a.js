@@ -44,8 +44,11 @@ sleep(1000);
 home();
 sleep(1000); 
 click(150,1360);
+sleep(8100);
+click(555,1200);
+sleep(4100); 
+click(555,1200);
 
-sleep(3000); 
 let now = new Date();
 let hour = now.getHours();
 let min = now.getMinutes();
