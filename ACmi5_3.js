@@ -45,9 +45,9 @@ home();
 sleep(1000); 
 launchApp('SmartPLAY');
 
-sleep(4000);
+sleep(6000);
 click(555,1200);
-sleep(2200); 
+sleep(2100); 
 click(555,1200);
 
 let now = new Date();
@@ -80,6 +80,7 @@ setTimeout(function() {
 setTimeout(function() {
   click(250,1155);
 }, msUntilNextHour);
+
 function book2(){
   // sleep(1000);
   // className("android.widget.Button").desc("虛擬等候室").findOne();
