@@ -8,9 +8,9 @@ var c=b.split(',');
 //sleep(6000);
 
 home();
-sleep(1500); 
+sleep(2000); 
   click(150,1360);
-sleep(7000);
+sleep(6100);
 //className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
 className("android.widget.Button").desc("登入").findOne().click();
 sleep(8000);
