@@ -46,7 +46,7 @@ sleep(1000);
 launchApp('SmartPLAY');
 
 
-sleep(2200); 
+sleep(3200); 
 click(555,1200);
 sleep(2200); 
 click(555,1200);
