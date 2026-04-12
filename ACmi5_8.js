@@ -44,7 +44,11 @@ home();
 sleep(1100); 
 launchApp('SmartPLAY');
 
-sleep(3000); 
+sleep(8100);
+click(555,1200);
+sleep(4100); 
+click(555,1200);
+
 let now = new Date();
 let hour = now.getHours();
 let min = now.getMinutes();
