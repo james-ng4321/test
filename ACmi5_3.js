@@ -45,9 +45,9 @@ home();
 sleep(1000); 
 launchApp('SmartPLAY');
 
-sleep(6000);
+sleep(8100);
 click(555,1200);
-sleep(2100); 
+sleep(4100); 
 click(555,1200);
 
 let now = new Date();
