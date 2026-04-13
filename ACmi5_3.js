@@ -49,7 +49,7 @@ launchApp('SmartPLAY');
 
 sleep(8100);
 click(555,1200);
-sleep(6100); 
+sleep(4100); 
 click(1000,1500);
 
 let now = new Date();
@@ -70,7 +70,7 @@ let ms = ["2110","2120","2130","2110","2110","2120","2130","2110"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
-setTimeout(function() {
+//setTimeout(function() {
 // 1. Define the task to be repeated
 function myScript() {
   click(555,1200);
@@ -87,7 +87,7 @@ setTimeout(() => {
     clearInterval(intervalId);
 }, 8000);
    sleep(8000); book2();
-}, msUntilNextHour2);
+//}, msUntilNextHour2);
 
 setTimeout(function() {
  //   click(63,627);
