@@ -80,7 +80,7 @@ function myScript() {
 }
 
 // 2. Start the interval (e.g., every 1000ms = 1s)
-const intervalId = setInterval(myScript, 10);
+const intervalId = setInterval(myScript, 50);
 
 // 3. Stop the interval after 8 seconds (8000ms)
 setTimeout(() => {
