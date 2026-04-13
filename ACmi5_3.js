@@ -68,14 +68,21 @@ let ms = ["2110","2120","2130","2110","2110","2120","2130","2110"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
-    sleep(8000);
-const interval = setInterval(() => {
+// 1. Define the task to be repeated
+function myScript() {
   click(555,1200);
-    sleep(60);
+    sleep(100);
    click(1000,1500);
- }, 80);
-    sleep(8000);
-    clearInterval(interval);
+    // Add your code here
+}
+
+// 2. Start the interval (e.g., every 1000ms = 1s)
+const intervalId = setInterval(myScript, 100);
+
+// 3. Stop the interval after 8 seconds (8000ms)
+setTimeout(() => {
+    clearInterval(intervalId);
+}, 8000);
 
 
 setTimeout(function() {
