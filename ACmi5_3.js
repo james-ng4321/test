@@ -73,7 +73,7 @@ let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 // 1. Define the task to be repeated
 function myScript() {
   click(555,1200);
-//    sleep(10);
+  sleep(10);
    click(1000,1500);
     // Add your code here
 }
