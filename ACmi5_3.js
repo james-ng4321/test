@@ -50,7 +50,7 @@ sleep(6100);
 click(555,1200);
 sleep(3100); 
 click(1000,1500);
-sleep(100);
+sleep(500);
 
 let now = new Date();
 let hour = now.getHours();
@@ -70,7 +70,7 @@ let ms = ["2110","2120","2130","2110","2110","2120","2130","2110"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
-//setTimeout(function() {
+setTimeout(function() {
 // 1. Define the task to be repeated
 function myScript() {
   click(555,1200);
@@ -86,8 +86,8 @@ const intervalId = setInterval(myScript, 10);
 setTimeout(() => {
     clearInterval(intervalId);
 }, 8000);
-// sleep(8000);
-//  book2();
+ sleep(8500);
+ book2();
 //}, msUntilNextHour2);
 
 setTimeout(function() {
