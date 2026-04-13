@@ -50,6 +50,7 @@ sleep(6100);
 click(555,1200);
 sleep(3100); 
 click(1000,1500);
+sleep(100);
 
 let now = new Date();
 let hour = now.getHours();
