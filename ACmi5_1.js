@@ -80,8 +80,8 @@ setTimeout(function() {
 
 setTimeout(function() {
 const intervalId = setInterval(() => {
-  click(555,1200);
-                    click(967,1458);
+ // click(555,1200);
+ //                   click(967,1458);
 }, 8000);
 }, msUntilNextHour2);
 
