@@ -85,8 +85,8 @@ const intervalId = setInterval(myScript, 1000);
 setTimeout(() => {
     clearInterval(intervalId);
 }, 8000);
- sleep(8000);
-  book2();
+// sleep(8000);
+//  book2();
 //}, msUntilNextHour2);
 
 setTimeout(function() {
