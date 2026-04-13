@@ -29,7 +29,7 @@ sleep(1000);
 click(497,770);
 sleep(1000);
 
-function autoclick(){
+
 home();
 sleep(1000);
 launchApp('Auto Clicker');
@@ -44,9 +44,9 @@ sleep(1000);
 home();
 sleep(1000); 
 launchApp('SmartPLAY');
-}
 
-sleep(6100);
+
+sleep(8100);
 click(555,1200);
 sleep(3100); 
 click(1000,1500);
@@ -70,31 +70,12 @@ let ms = ["2110","2120","2130","2110","2110","2120","2130","2110"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
-//setTimeout(function() {
-// 1. Define the task to be repeated
-function myScript() {
-  click(555,1200);
-  //sleep(10);
-   click(1000,1500);
-    // Add your code here
-}
-
-// 2. Start the interval (e.g., every 1000ms = 1s)
-const intervalId = setInterval(myScript, 10);
-
-// 3. Stop the interval after 8 seconds (8000ms)
-sleep(8000);
-    clearInterval(intervalId);
-sleep(500);
- book2();
-//}, msUntilNextHour2);
-
 setTimeout(function() {
- //   click(63,627);
- //   sleep(8000);
- //   click(63,627);
- //   sleep(200);
- //   book2();
+   click(63,627);
+   sleep(8000);
+    click(63,627);
+    sleep(200);
+    book2();
 }, msUntilNextHour2);
 
 setTimeout(function() {
