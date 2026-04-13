@@ -49,6 +49,7 @@ sleep(8100);
 click(555,1200);
 sleep(4100); 
 click(555,1200);
+
 let now = new Date();
 let hour = now.getHours();
 let min = now.getMinutes();
@@ -78,8 +79,15 @@ setTimeout(function() {
 }, msUntilNextHour2);
 
 setTimeout(function() {
+const intervalId = setInterval(() => {
   click(555,1200);
-}, msUntilNextHour);
+                    click(967,1458);
+}, 8000);
+}, msUntilNextHour2);
+
+setTimeout(function() {
+  click(555,1200);
+}, msUntilNextHour - 500);
 
 function book2(){
   // sleep(1000);
