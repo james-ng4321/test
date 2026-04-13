@@ -69,12 +69,34 @@ let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
- //  click(500,1200);
-    click(63,627);
+ //   click(63,627);
     sleep(8000);
-    click(63,627);
+ //   click(63,627);
     sleep(200);
-    book2();
+ //   book2();
+}, msUntilNextHour2);
+
+    sleep(8000);
+const interval = setInterval(() => {
+  click(555,1200);
+    sleep(60);
+   click(1000,1500);
+ }, 80);
+    sleep(8000);
+    clearInterval(interval);
+
+
+setTimeout(function() {
+const startTime = Date.now();
+const interval = setInterval(() => {
+  click(555,1200);
+    sleep(60);
+   click(1000,1500);
+  if (Date.now() - startTime >= 8000) { // 8 seconds
+    clearInterval(interval);
+ //   console.log("Stopped after 10 seconds");
+  }
+}, 80); // runs every 80 ms
 }, msUntilNextHour2);
 
 setTimeout(function() {
