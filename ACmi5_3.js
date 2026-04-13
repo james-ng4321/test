@@ -48,7 +48,7 @@ launchApp('SmartPLAY');
 sleep(8100);
 click(555,1200);
 sleep(4100); 
-click(555,1200);
+   click(1000,1500);
 
 let now = new Date();
 let hour = now.getHours();
@@ -68,14 +68,6 @@ let ms = ["2110","2120","2130","2110","2110","2120","2130","2110"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
-setTimeout(function() {
- //   click(63,627);
-    sleep(8000);
- //   click(63,627);
-    sleep(200);
- //   book2();
-}, msUntilNextHour2);
-
     sleep(8000);
 const interval = setInterval(() => {
   click(555,1200);
@@ -85,6 +77,14 @@ const interval = setInterval(() => {
     sleep(8000);
     clearInterval(interval);
 
+
+setTimeout(function() {
+ //   click(63,627);
+    sleep(8000);
+ //   click(63,627);
+    sleep(200);
+ //   book2();
+}, msUntilNextHour2);
 
 setTimeout(function() {
 const startTime = Date.now();
