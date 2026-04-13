@@ -83,10 +83,9 @@ function myScript() {
 const intervalId = setInterval(myScript, 10);
 
 // 3. Stop the interval after 8 seconds (8000ms)
-setTimeout(() => {
+sleep(8000);
     clearInterval(intervalId);
-}, 8000);
-sleep(9000);
+sleep(500);
  book2();
 //}, msUntilNextHour2);
 
