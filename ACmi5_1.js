@@ -84,10 +84,9 @@ const interval = setInterval(() => {
  // click(555,1200);
   //   sleep(60);
  //                   click(967,1458);
-
   if (Date.now() - startTime >= 8000) { // 8 seconds
     clearInterval(interval);
-    console.log("Stopped after 10 seconds");
+ //   console.log("Stopped after 10 seconds");
   }
 }, 80); // runs every 1 ms
 }, msUntilNextHour2);
