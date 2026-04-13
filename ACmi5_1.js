@@ -82,6 +82,7 @@ setTimeout(function() {
 const startTime = Date.now();
 const interval = setInterval(() => {
  // click(555,1200);
+  //   sleep(60);
  //                   click(967,1458);
 
   if (Date.now() - startTime >= 8000) { // 8 seconds
