@@ -44,10 +44,7 @@ sleep(1000);
 home();
 sleep(2000); 
 launchApp('SmartPLAY');
-sleep(8100);
-click(555,1200);
-sleep(4100); 
-click(555,1200);
+
 
 let now = new Date();
 let hour = now.getHours();
@@ -77,8 +74,12 @@ setTimeout(function() {
 }, msUntilNextHour2);
 
 setTimeout(function() {
+click(555,1200);
+}, msUntilNextHour2 - 10000);
+
+setTimeout(function() {
   click(250,1155);
-}, msUntilNextHour);
+}, msUntilNextHour - 500);
 
 function book2(){
   // sleep(1000);
