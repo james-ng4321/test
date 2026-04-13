@@ -29,6 +29,7 @@ sleep(1000);
 click(497,770);
 sleep(1000);
 
+function autoclick(){
 home();
 sleep(1000);
 launchApp('Auto Clicker');
@@ -40,6 +41,7 @@ click(518,1077);
 sleep(1000);
 click(76,1287);
 sleep(1000);
+}
 
 home();
 sleep(1000); 
@@ -47,8 +49,8 @@ launchApp('SmartPLAY');
 
 sleep(8100);
 click(555,1200);
-sleep(4100); 
-   click(1000,1500);
+sleep(6100); 
+click(1000,1500);
 
 let now = new Date();
 let hour = now.getHours();
@@ -68,6 +70,7 @@ let ms = ["2110","2120","2130","2110","2110","2120","2130","2110"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
+setTimeout(function() {
 // 1. Define the task to be repeated
 function myScript() {
   click(555,1200);
@@ -83,7 +86,8 @@ const intervalId = setInterval(myScript, 10);
 setTimeout(() => {
     clearInterval(intervalId);
 }, 8000);
-
+   sleep(8000); book2();
+}, msUntilNextHour2);
 
 setTimeout(function() {
  //   click(63,627);
@@ -91,19 +95,6 @@ setTimeout(function() {
  //   click(63,627);
     sleep(200);
  //   book2();
-}, msUntilNextHour2);
-
-setTimeout(function() {
-const startTime = Date.now();
-const interval = setInterval(() => {
-  click(555,1200);
-    sleep(60);
-   click(1000,1500);
-  if (Date.now() - startTime >= 8000) { // 8 seconds
-    clearInterval(interval);
- //   console.log("Stopped after 10 seconds");
-  }
-}, 80); // runs every 80 ms
 }, msUntilNextHour2);
 
 setTimeout(function() {
