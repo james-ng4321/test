@@ -79,10 +79,16 @@ setTimeout(function() {
 }, msUntilNextHour2);
 
 setTimeout(function() {
-const intervalId = setInterval(() => {
+const startTime = Date.now();
+const interval = setInterval(() => {
  // click(555,1200);
  //                   click(967,1458);
-}, 8000);
+
+  if (Date.now() - startTime >= 8000) { // 8 seconds
+    clearInterval(interval);
+    console.log("Stopped after 10 seconds");
+  }
+}, 100); // runs every 1 ms
 }, msUntilNextHour2);
 
 setTimeout(function() {
