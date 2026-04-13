@@ -88,13 +88,13 @@ setTimeout(() => {
 }, 8000);
  sleep(8500);
  book2();
-//}, msUntilNextHour2);
+}, msUntilNextHour2);
 
 setTimeout(function() {
  //   click(63,627);
-    sleep(8000);
+ //   sleep(8000);
  //   click(63,627);
-    sleep(200);
+ //   sleep(200);
  //   book2();
 }, msUntilNextHour2);
 
