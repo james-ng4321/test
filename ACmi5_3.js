@@ -49,7 +49,7 @@ launchApp('SmartPLAY');
 
 sleep(8100);
 click(555,1200);
-sleep(4100); 
+sleep(3100); 
 click(1000,1500);
 
 let now = new Date();
