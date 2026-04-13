@@ -71,13 +71,13 @@ let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 // 1. Define the task to be repeated
 function myScript() {
   click(555,1200);
-    sleep(100);
+//    sleep(10);
    click(1000,1500);
     // Add your code here
 }
 
 // 2. Start the interval (e.g., every 1000ms = 1s)
-const intervalId = setInterval(myScript, 100);
+const intervalId = setInterval(myScript, 50);
 
 // 3. Stop the interval after 8 seconds (8000ms)
 setTimeout(() => {
