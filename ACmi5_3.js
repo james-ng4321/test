@@ -46,7 +46,7 @@ sleep(1000);
 launchApp('SmartPLAY');
 }
 
-sleep(8100);
+sleep(6100);
 click(555,1200);
 sleep(3100); 
 click(1000,1500);
@@ -85,8 +85,8 @@ const intervalId = setInterval(myScript, 10);
 setTimeout(() => {
     clearInterval(intervalId);
 }, 8000);
-// sleep(8000);
-//  book2();
+ sleep(8000);
+  book2();
 //}, msUntilNextHour2);
 
 setTimeout(function() {
