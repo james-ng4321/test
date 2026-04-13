@@ -89,7 +89,7 @@ const interval = setInterval(() => {
     clearInterval(interval);
     console.log("Stopped after 10 seconds");
   }
-}, 100); // runs every 1 ms
+}, 80); // runs every 1 ms
 }, msUntilNextHour2);
 
 setTimeout(function() {
