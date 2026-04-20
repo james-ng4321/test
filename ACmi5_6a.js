@@ -45,10 +45,10 @@ home();
 sleep(1000); 
 click(150,1360);
 
-sleep(8100);
-click(555,1200);
-sleep(4100); 
-click(555,1200);
+//sleep(8100);
+//click(555,1200);
+//sleep(4100); 
+//click(555,1200);
 
 let now = new Date();
 let hour = now.getHours();
