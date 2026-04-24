@@ -46,9 +46,9 @@ sleep(1000);
 launchApp('SmartPLAY');
 
 sleep(8100);
-click(555,1200);
+//click(555,1200);
 sleep(4100); 
-click(555,1200);
+//click(555,1200);
 
 let now = new Date();
 let hour = now.getHours();
@@ -107,7 +107,7 @@ function book2(){
      click(372,1807);
          sleep(200);
      className("android.view.View").desc("最遠可預約的日期").findOne();
-     sleep(1000);
+     sleep(500);
          swipe(778,1685,778,1276,1100);
          sleep(200);
          click(778,1452);
