@@ -91,7 +91,7 @@ function book2(){
      click(372,1807);
          sleep(200);
      className("android.view.View").desc("最遠可預約的日期").findOne();
-     sleep(1200);
+     sleep(300);
          swipe(778,1685,778,1276,1100);
          sleep(200);
          click(778,1452);
@@ -102,7 +102,7 @@ function book2(){
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
                click(702,1163); //  click(530,1165);
-               sleep(200);} else { sleep(1000);
+               sleep(200);  //} else { sleep(1000);
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
                click(702,1163); //  click(530,1165);
@@ -117,7 +117,7 @@ function book2(){
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1100);
                click(702,1163); //  click(530,1165);
-               sleep(200);} else { sleep(1000);
+               sleep(200);//} else { sleep(1000);
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
                click(702,1163); //  click(530,1165);
