@@ -48,7 +48,7 @@ launchApp('SmartPLAY');
 sleep(8100);
 click(555,1200);
 sleep(4100); 
-click(555,1200);
+click(1050,1400);
   //  book2();
 let now = new Date();
 let hour = now.getHours();
