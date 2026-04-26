@@ -22,7 +22,7 @@ function book2(){
      sleep(1500);
          swipe(778,1685,778,1550,1000);
          sleep(200);
-         click(778,1452);
+         click(778,1652);
          sleep(1200);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
@@ -37,7 +37,7 @@ function book2(){
                sleep(200);}}  
            swipe(885,1365,52,1385,1100);
          sleep(200);
-           click(715,1458);
+           click(665,1658);
            sleep(1100);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
@@ -50,6 +50,6 @@ function book2(){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);}}      
-           click(967,1458);
+           click(967,1658);
          }}
   }
