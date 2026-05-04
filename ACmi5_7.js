@@ -75,7 +75,7 @@ setTimeout(function() {
 click(555,1200);
  sleep(2100); 
 click(1050,1400);
-}, msUntilNextHour2 - 320000);
+}, msUntilNextHour2 - 820000);
 
 setTimeout(function() {
   click(250,1155);
