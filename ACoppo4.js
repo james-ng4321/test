@@ -42,7 +42,7 @@ sleep(1000);
 home();
 sleep(1100); 
 click('SmartPLAY');
-  book2();
+
 let now = new Date();
 let hour = now.getHours();
 let min = now.getMinutes();
