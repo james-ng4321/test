@@ -8,30 +8,30 @@ var c=b.split(',');
 //sleep(6000);
 
 home();
-sleep(1100); 
-launchApp('SmartPLAY');
-sleep(8000);
+sleep(1000); 
+  click(150,1360);
+sleep(6000);
 //className("android.view.View").desc("歡迎來到SmartPLAY").waitFor();
 className("android.widget.Button").desc("登入").findOne().click();
-sleep(11000);
+sleep(8000);
 setClip(c[0]);
-sleep(1500);
+sleep(1000);
 click(502,618);
-sleep(1100);
+sleep(1000);
 click(125,1196);
-sleep(1100);
+sleep(1000);
 setClip(c[1]);
-sleep(1100); 
+sleep(1000); 
 click(504,934);
-sleep(1100);
+sleep(1000);
 click(125,1196);
-sleep(1100);
+sleep(1000);
 click(497,770);
-sleep(1100);
+sleep(1000);
 
 home();
-sleep(1000);
-launchApp('Auto Clicker');
+sleep(2000);
+click(415,1360);
 sleep(4000);
 //className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
 id("enable_multi_mode_button").findOne().click();
@@ -42,9 +42,8 @@ click(76,1287);
 sleep(1000);
 
 home();
-sleep(2000); 
-launchApp('SmartPLAY');
-
+sleep(1000); 
+click(150,1360);
 
 let now = new Date();
 let hour = now.getHours();
