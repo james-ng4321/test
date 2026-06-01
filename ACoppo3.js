@@ -64,7 +64,7 @@ setTimeout(function() {
 
 function book(){
   click(42,498);
-    sleep(6300);
+    sleep(7500);
        click(42,498);
   book2();
 };
