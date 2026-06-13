@@ -66,10 +66,6 @@ setTimeout(function() {
 }, msUntilNextHour2);
 
 
-    sleep(7200);
-    book2();
-
-
 function book(){
   click(42,498);
     sleep(7500);
@@ -128,7 +124,7 @@ const myInterval = setInterval(function() {
         className("android.view.View").desc("最遠可預約的日期").findOne();
      sleep(1500);
   //71
-            swipe(666,1023,666,1230,500);
+            swipe(666,1223,666,1030,500);
               sleep(100);
    //71   
    click(476,1190);
