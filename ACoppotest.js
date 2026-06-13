@@ -61,7 +61,7 @@ const myInterval = setInterval(function() {
         className("android.view.View").desc("最遠可預約的日期").findOne();
      sleep(1500);
   //71
-            swipe(666,1023,666,1230,500);
+            swipe(666,1023,666,1230,1000);
               sleep(100);
    //71   
    click(476,1190);
