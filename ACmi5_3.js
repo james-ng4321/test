@@ -98,8 +98,8 @@ function book2(){
     // className("android.view.View").desc("最遠可預約的日期").findOne();
       className("android.view.View").desc("再次租訂").findOne();
      sleep(1500);
-      //   swipe(778,1685,778,1510,500);
-   swipe(830,1694,830,1280,500);
+      //   swipe(778,1685,778,1550,500);
+   swipe(830,1694,830,1240,500);
          sleep(200);
          click(778,1652);
          sleep(1200);
