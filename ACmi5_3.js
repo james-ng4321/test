@@ -70,15 +70,12 @@ let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
- //  click(63,627);
+    click(63,627);
     sleep(7600);
- //   click(63,627);
+    click(63,627);
     sleep(200);
     book2();
 }, msUntilNextHour2);
-
-    sleep(7200);
-    book2();
 
 setTimeout(function() {
   click(250,1155);
