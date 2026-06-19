@@ -117,11 +117,11 @@ const myInterval = setInterval(function() {
              sleep(200);
         className("android.view.View").desc("最遠可預約的日期").findOne();
      sleep(1500);
-      //71
+  //71
             swipe(666,1223,666,1030,500);
               sleep(100);
    //71   
-        click(476,1190);
+   click(476,1190);
         sleep(1500);
             if(!(className("android.view.View").desc("檢視並付款").exists())){
               click(475,828);// click(355,828);
@@ -129,12 +129,12 @@ const myInterval = setInterval(function() {
               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                 sleep(1100);
                 click(475,828);// click(355,828);
-                sleep(200);//}  else { sleep(1000);
+                sleep(200); //}  else { sleep(1000);
                                       if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                 sleep(1100);
                 click(475,828);// click(355,828);
                 sleep(200);} }
-            swipe(666,1023,73,1023,1200);
+            swipe(606,1023,73,9423,1200);
             sleep(500);
             click(438,1190);
             sleep(1500);
@@ -144,7 +144,7 @@ const myInterval = setInterval(function() {
               if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
               sleep(1100);
               click(475,828);// click(355,828);
-              sleep(200);// } else { sleep(1000);
+              sleep(200); //} else { sleep(1000);
                                       if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                 sleep(1100);
                 click(475,828);// click(355,828);
