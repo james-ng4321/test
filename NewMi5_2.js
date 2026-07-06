@@ -1,3 +1,14 @@
+home();
+sleep(1000);
+launchApp('Auto Clicker');
+sleep(4000);
+//className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
+id("enable_multi_mode_button").findOne().click();
+sleep(2000);
+click(518,1077);
+sleep(1000);
+click(76,1287);
+sleep(1000);
 
 home();
 sleep(2000); 
@@ -6,6 +17,8 @@ sleep(5000);
 className("android.widget.Button").desc("登入").findOne().click();
 sleep(5000);
 click(380,1750);
+sleep(5000);
+ //click(550,1700);
 
 let now = new Date();
 let hour = now.getHours();
@@ -24,10 +37,11 @@ let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
- //  click(500,1200);
-    click(550,1700);
-    sleep(2000);
- //   book2();
+ 
+    click(63,627);
+    sleep(6800);
+    click(63,627);
+
 }, msUntilNextHour2);
 
 
