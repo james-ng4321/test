@@ -8,7 +8,7 @@ app.launchApp("SmartPLAY");
 sleep(5000); 
 className("android.widget.Button").desc("登入").findOne().click();
 sleep(5000);
-click(430,2000);
+click(380,1750);
 
 let now = new Date();
 let hour = now.getHours();
@@ -28,13 +28,13 @@ let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
  //  click(500,1200);
-    click(620,2350);
+    click(550,1700);
     sleep(2000);
     book2();
 }, msUntilNextHour2);
 
     sleep(8000);
-    click(620,2350);
+    click(550,1700);
     sleep(2000);
     book2();
 
@@ -47,41 +47,46 @@ function book2(){
      className("android.view.View").desc("你的日程表").findOne();
     sleep(200);
      //sleep(1000);
-     click(420,2420);
+     click(372,1807);
          sleep(200);
     // className("android.view.View").desc("最遠可預約的日期").findOne();
     //71
       className("android.view.View").desc("再次租訂").findOne();
        //71
      sleep(1500);
-         click(778,2052);
+        swipe(778,1685,778,1550,500);
+       //71
+  // swipe(830,1694,830,1220,500);
+       //71
+         sleep(200);
+         click(778,1652);
          sleep(1200);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
-               click(602,1503); //  click(530,1165);
+               click(702,1163); //  click(530,1165);
              sleep(200);
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
-               click(602,1503); //  click(530,1165);
+               click(702,1163); //  click(530,1165);
                sleep(200);  //} else { sleep(1000);
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
-               click(602,1503); //  click(530,1165);
+               click(702,1163); //  click(530,1165);
                sleep(200);}}  
-           swipe(1055,1705,182,1705,1100);
+           swipe(885,1365,52,1385,1100);
          sleep(200);
-         click(778,2052);
+           click(665,1658);
            sleep(1100);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
-               click(602,1503); //  click(530,1165);
+               click(702,1163); //  click(530,1165);
              sleep(200);
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1100);
-               click(602,1503); //  click(530,1165);
+               click(702,1163); //  click(530,1165);
                sleep(200);//} else { sleep(1000);
              if((!(className("android.view.View").desc("注視列表").exists()))&&(!(className("android.view.View").desc("檢視並付款").exists()))){
                sleep(1000);
-               click(602,1503); //  click(530,1165);
+               click(702,1163); //  click(530,1165);
                sleep(200);}}      
-           click(1050,2050);
+           click(967,1658);
          }}
-  }
+  } 
