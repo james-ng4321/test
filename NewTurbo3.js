@@ -46,19 +46,14 @@ function book2(){
      className("android.view.View").desc("你的日程表").findOne();
     sleep(200);
      //sleep(1000);
-     click(372,1807);
+     click(420,2420);
          sleep(200);
     // className("android.view.View").desc("最遠可預約的日期").findOne();
     //71
       className("android.view.View").desc("再次租訂").findOne();
        //71
      sleep(1500);
-        swipe(778,1685,778,1550,500);
-       //71
-  // swipe(830,1694,830,1220,500);
-       //71
-         sleep(200);
-         click(778,1652);
+         click(778,2052);
          sleep(1200);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
@@ -71,9 +66,9 @@ function book2(){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);}}  
-           swipe(885,1365,52,1385,1100);
+           swipe(1055,1705,182,1705,1100);
          sleep(200);
-           click(665,1658);
+         click(778,2052);
            sleep(1100);
              if(!(className("android.view.View").desc("檢視並付款").exists())){
                click(702,1163); //  click(530,1165);
@@ -86,6 +81,6 @@ function book2(){
                sleep(1000);
                click(702,1163); //  click(530,1165);
                sleep(200);}}      
-           click(967,1658);
+           click(1050,2050);
          }}
   }
