@@ -1,4 +1,14 @@
-
+home();
+sleep(1000);
+launchApp('Auto Clicker');
+sleep(4000);
+//className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
+id("enable_multi_mode_button").findOne().click();
+sleep(2000);
+click(518,1077);
+sleep(1000);
+click(76,1287);
+sleep(1000);
 
 home();
 sleep(2000); 
@@ -7,6 +17,8 @@ sleep(5000);
 className("android.widget.Button").desc("登入").findOne().click();
 sleep(5000);
 click(380,1750);
+sleep(20000);
+click(550,1700);
 
 let now = new Date();
 let hour = now.getHours();
@@ -16,19 +28,20 @@ let msUntilNextHour = ((60 - min - 1) * 60 * 1000) + (60 - sec) * 1000;
 //let ms = ["3910","3920","3930","3910","3910","3920","3930","3910"];
 //let ms = ["2510","2520","2530","2510","2510","2500","2530","2510"];
 //let ms = ["1010","1020","1030","1010","1010","1020","1030","1010"];
-//let ms = ["1500","1500","1501","1501","1501","1500","1500","1501"];
+let ms = ["3000","3000","3001","3001","3001","3000","3000","3001"];
 //let ms = ["1910","1920","1930","1910","1910","1920","1930","1910"];
-let ms = ["2034","2045","2076","2078","2012","2079","2034","2012"];
+//let ms = ["2034","2045","2076","2078","2012","2079","2034","2012"];
 //let ms = ["4100","4200","4300","4400","4150","4250","4350","4450"];
 //let ms = ["6100","6200","6300","6400","6150","6250","6350","6450"];
 let ms1=Math.floor(Math.random() * 8);
 let msUntilNextHour2= msUntilNextHour  - ms[ms1];
 
 setTimeout(function() {
- //  click(500,1200);
-    click(550,1700);
-    sleep(2000);
- //   book2();
+ 
+    click(63,627);
+    sleep(6800);
+    click(63,627);
+
 }, msUntilNextHour2);
 
 
