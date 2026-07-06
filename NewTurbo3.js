@@ -33,10 +33,6 @@ setTimeout(function() {
     book2();
 }, msUntilNextHour2);
 
-    sleep(8000);
-    click(620,2350);
-    sleep(2000);
-    book2();
 
 function book2(){
   // sleep(1000);
