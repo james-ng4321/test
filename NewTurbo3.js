@@ -6,6 +6,8 @@ home();
 sleep(2000); 
 app.launchApp("SmartPLAY");
 sleep(5000); 
+className("android.widget.Button").desc("登入").findOne().click();
+sleep(5000);
 click(430,2000);
 
 let now = new Date();
