@@ -10,15 +10,7 @@ sleep(1000);
 click(76,1287);
 sleep(1000);
 
-home();
-sleep(2000); 
-app.launchApp("SmartPLAY");
-sleep(5000); 
-className("android.widget.Button").desc("登入").findOne().click();
-sleep(5000);
-click(380,1750);
-//sleep(20000);
-//click(550,1700);
+
 
 let now = new Date();
 let hour = now.getHours();
