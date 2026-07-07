@@ -1,6 +1,3 @@
-var a =http.get('https://raw.githubusercontent.com/james-ng4321/test/refs/heads/master/NewTurbo3');
-var b=a.body.string();
-var c=b.split(',');
 
 home();
 sleep(2000); 
