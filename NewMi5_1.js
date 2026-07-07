@@ -10,6 +10,9 @@ sleep(1000);
 click(76,1287);
 sleep(1000);
 
+home();
+sleep(2000); 
+app.launchApp("SmartPLAY");
 
 
 let now = new Date();
