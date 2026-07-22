@@ -1,6 +1,7 @@
 home();
 sleep(1000);
-launchApp('Auto Clicker');
+click(415,1360);
+//launchApp('Auto Clicker');
 sleep(4000);
 //className("android.widget.TextView").text("Auto Clicker 🎯 (Free)").waitFor();
 id("enable_multi_mode_button").findOne().click();
@@ -12,7 +13,8 @@ sleep(1000);
 
 home();
 sleep(2000); 
-app.launchApp("SmartPLAY");
+click(150,1360);
+//app.launchApp("SmartPLAY");
 //sleep(5000); 
 //className("android.widget.Button").desc("登入").findOne().click();
 //sleep(5000);
